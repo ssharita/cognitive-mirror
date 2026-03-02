@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitive Mirror — Behavioral Analysis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+  <div id="screen" class="screen active" data-screen="entry">
+    <!-- Entry Screen -->
+    <div class="entry-container">
+      <h1>COGNITIVE MIRROR</h1>
+      <h2>You are not answering questions. You are revealing patterns.</h2>
+      
+      <div class="input-group">
+        <input type="text" id="player-name" placeholder="Enter identifier" value="Subject">
+      </div>
+      
+      <button class="btn" onclick="window.startAnalysis()">BEGIN ANALYSIS</button>
+    </div>
+  </div>
+</div>
+
+<!-- Voice toggle button -->
+<div id="voice-toggle" onclick="window.toggleVoice()">
+  <div id="voice-indicator">🔊</div>
+  <span>Voice</span>
+</div>
+
+<script src="js/metrics.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/level1.js"></script>
+<script src="js/level2.js"></script>
+<script src="js/level3.js"></script>
+<script src="js/scoring.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
